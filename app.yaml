@@ -1,0 +1,28 @@
+application: kamapootra
+version: 1-1
+runtime: python
+api_version: 1
+
+  
+builtins:
+- remote_api: on
+
+handlers:   
+- url: /kp_tweet
+  script: pootra.py
+  login: admin
+
+- url: /follow
+  script: pootra.py
+  login: admin
+
+- url: /queuebot
+  script: queuebot.py
+  login: admin
+
+- url: /queuebot2
+  script: queuebot2.py
+  login: admin
+  
+- url: .*
+  script: pootra.py

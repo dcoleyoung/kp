@@ -1,0 +1,8 @@
+cron:
+- description: tweet search
+  url: /queuebot
+  schedule: every 3 hours 
+  
+- description: tweet search
+  url: /queuebot2
+  schedule: every 8 hours
